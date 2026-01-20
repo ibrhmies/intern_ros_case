@@ -1,0 +1,10 @@
+<launch>
+  <node pkg="intern_ros_case" type="robot_move_node.py" name="robot_move_node" output="screen">
+    <!-- opsiyonel parametreler -->
+    <param name="linear_speed" value="0.2"/>
+    <param name="angular_speed" value="0.5"/>
+    <param name="forward_time" value="5.0"/>
+    <param name="stop_time" value="1.0"/>
+    <param name="turn_angle_deg" value="90.0"/>
+  </node>
+</launch>
