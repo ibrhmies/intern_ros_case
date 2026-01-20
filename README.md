@@ -43,8 +43,6 @@ Bu depo şu temel dosya/klasörleri içerir: :contentReference[oaicite:1]{index=
 - TurtleBot3 simülasyonu kullanacaksan:
   - `turtlebot3` ve `turtlebot3_simulations` paketleri (Gazebo)
 
-> Not: Simülasyonu bu repo başlatmıyorsa, önce TurtleBot3 Gazebo’yu ayrı terminalde açman gerekir (aşağıda var).
-
 ---
 
 ## 🚀 Kurulum
@@ -73,7 +71,7 @@ source devel/setup.bash
 ```
 
 ```bash
-echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+echo "source ~/intern_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
