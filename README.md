@@ -52,8 +52,44 @@ Bu depo şu temel dosya/klasörleri içerir: :contentReference[oaicite:1]{index=
 ### 1) Catkin workspace içine klonla
 
 ```bash
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/src
+mkdir -p ~/intern_ws/src
+cd ~/intern_ws/src
 git clone https://github.com/ibrhmies/intern_ros_case.git
 cd ..
+```
+
+### 2) Bağımlılıkları yükle
+
+```bash
+rosdep update
+rosdep install --from-paths src --ignore-src -r -y
+```
+
+### 3) Derle ve source et
+
+```bash
+catkin_make
+source devel/setup.bash
+```
+
+```bash
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+## Çalıştırma
+
+### TurtleBot3 Gazebo + bu paket (iki terminal)
+
+#### Terminal 1 (Gazebo):
+
+```bash
+export TURTLEBOT3_MODEL=waffle
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+```
+
+#### Terminal 2 (intern_ros_case bringup.launch):
+
+```bash
+roslaunch intern_ros_case bringup.launch
 ```
