@@ -108,7 +108,7 @@ roslaunch intern_ros_case bringup.launch
 ![Başlangıç](image/baslangic.png)
 
 **2) 5 saniye ileri hareket**
-![5 saniye ileri](image/5_sn_ilerle.png)
+![5 saniye ileri](image/5_sn_ileri.png)
 
 **3) 90° dönüş sonrası**
 ![90 derece dönüş](image/90_derece_don.png)
