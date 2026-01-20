@@ -93,3 +93,13 @@ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```bash
 roslaunch intern_ros_case bringup.launch
 ```
+
+### ⚙️ Parametreler
+
+Parametre	                        Açıklama	             Örnek
+
+/robot_move_node/linear_speed	    İleri hız (m/s)	        0.2
+/robot_move_node/angular_speed	  Açısal hız (rad/s)	    0.5
+/robot_move_node/forward_time	    İleri gidiş süresi (s)	5.0
+/robot_move_node/stop_time	      Durma süresi (s)	      1.0
+/robot_move_node/turn_angle_deg	  Dönüş açısı (derece)	  90.0
